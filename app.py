@@ -9,7 +9,6 @@ def Main():
     
     predict_parser = subparsers.add_parser("predict", help = "Creat")
     predict_parser.add_argument("-p", "--img_path", type = str, help = "Directory to list")
-    predict_parser.add_argument("")
     predict_parser.set_defaults(func = predict_parser_func)
 
     args = parser.parse_args()
